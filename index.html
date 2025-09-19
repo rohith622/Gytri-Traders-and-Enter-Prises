@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaytri Traders and Enterprises</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>🌿 Gaytri Traders and Enterprises</h1>
+    <p>Pesticide and Fertilizer Shop - K. Gokavaram</p>
+  </header>
+
+  <nav>
+    <input type="text" id="searchInput" placeholder="Search pesticides...">
+    <button onclick="searchPesticide()">Search</button>
+  </nav>
+
+  <main>
+    <section id="pesticide-stock">
+      <h2>📦 Pesticide Stock</h2>
+      <div id="pesticide-list"></div>
+    </section>
+
+    <section id="add-pesticide-section">
+      <h2>Add New Pesticide</h2>
+      <form id="addPesticideForm">
+        <input type="text" id="pesticideName" placeholder="Pesticide Name" required><br><br>
+        <input type="text" id="category" placeholder="Category (e.g., Organic)" required><br><br>
+        <input type="number" id="price" placeholder="Price ₹" required><br><br>
+        <input type="number" id="quantity" placeholder="Quantity" required><br><br>
+        <button type="submit">Add Pesticide</button>
+      </form>
+    </section>
+    <section id="orderFormSection">
+        <h2>🛒 Customer Order</h2>
+        <form id="customerOrderForm">
+          <input type="text" id="customerName" placeholder="Your Name" required />
+          <input type="text" id="customerAddress" placeholder="Delivery Address" required />
+          <input type="text" id="pesticideOrdered" placeholder="Pesticide Name" required />
+          <input type="number" id="orderQuantity" placeholder="Quantity" required />
+          <button type="submit">Place Order</button>
+        </form>
+      </section>
+      <section id="orders">
+        <h2>🛒 Orders</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Customer Name</th>
+              <th>Address</th>
+              <th>Pesticide</th>
+              <th>Quantity</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="ordersTableBody">
+            <!-- Orders from backend will be inserted here -->
+          </tbody>
+        </table>
+      </section>
+      
+
+    <section id="employee-section">
+      <h2>👨‍🌾 Employees</h2>
+      <ul>
+        <li>G. Mahesh</li>
+        <li>Y.V.S.R. Suryanarayana</li>
+      </ul>
+    </section>
+
+    <section id="attendance-section">
+      <h2>📋 Worker Attendance</h2>
+      <p>Attendance system will be added with backend integration.</p>
+    </section>
+
+    <section id="orders-section">
+      <h2>🛒 Orders</h2>
+      <p>Order details will appear here after backend integration.</p>
+    </section>
+
+    <section id="payments-section">
+      <h2>💳 Payments</h2>
+      <p>Payment tracking will be integrated with backend.</p>
+    </section>
+
+    <section id="customer-section">
+      <h2>📍 Customer Addresses</h2>
+      <p>Customer details section will be updated soon.</p>
+    </section>
+
+    <section class="whatsapp-support">
+      <h2>💬 WhatsApp Support</h2>
+      <a href="https://wa.me/9000921775" target="_blank">Chat with us on WhatsApp</a>
+    </section>
+  </main>
+</body>
+
+</html>
+
